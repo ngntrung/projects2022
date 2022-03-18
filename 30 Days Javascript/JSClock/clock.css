@@ -30,5 +30,6 @@ body {
   position: absolute;
   transform:rotate(90deg);
   transform-origin: 100%;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 0.5);
 }
 
