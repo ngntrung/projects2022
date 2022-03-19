@@ -32,6 +32,47 @@ body {
   top: 8%;
 }
 
+.mark-outline {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  z-index: 0;
+  margin: auto;
+}
+
+.marking {
+  width: 4px;
+  height: 95%;
+  margin: auto;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgb(150, 150, 150);
+  position: absolute;
+  border-radius: 8px;
+}
+
+.marking.mark-one {
+  transform:rotate(30deg);
+}
+
+.marking.mark-two {
+  transform:rotate(60deg);
+}
+
+.marking.mark-three {
+  transform:rotate(90deg);
+}
+
+.marking.mark-four {
+  transform:rotate(120deg);
+}
+.marking.mark-five {
+  transform:rotate(150deg);
+}
+
+.marking.mark-six {
+  transform:rotate(180deg);
+}
+
 .inner-clock {
   background: #f1f1f1;
   width: 85%;
@@ -114,45 +155,4 @@ body {
   display: flex;
   padding: 4px;
   box-shadow: inset 0px 2px 4px rgba(80, 79, 79, 0.4);
-}
-
-.mark-outline {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  z-index: 0;
-  margin: auto;
-}
-
-.marking {
-  width: 4px;
-  height: 95%;
-  margin: auto;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgb(150, 150, 150);
-  position: absolute;
-  border-radius: 8px;
-}
-
-.marking.mark-one {
-  transform:rotate(30deg);
-}
-
-.marking.mark-two {
-  transform:rotate(60deg);
-}
-
-.marking.mark-three {
-  transform:rotate(90deg);
-}
-
-.marking.mark-four {
-  transform:rotate(120deg);
-}
-.marking.mark-five {
-  transform:rotate(150deg);
-}
-
-.marking.mark-six {
-  transform:rotate(180deg);
 }

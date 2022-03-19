@@ -1,11 +1,13 @@
-
+// Initialize the objects
 const hourHand = document.querySelector('.hour');
 const minuteHand = document.querySelector('.minute');
 const secondHand = document.querySelector('.second');
 const digitalClock = document.querySelector('.digital-clock');
 
+// Internal to update the clock according to current time
 const interval = setInterval(clockFunction, 1000)
 
+// Time Function
 function clockFunction () {
   const date = new Date();
   const second = date.getSeconds();
