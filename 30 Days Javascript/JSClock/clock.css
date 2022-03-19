@@ -4,6 +4,7 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  background: lightcyan;
 }
 .container {
   position: relative;
@@ -11,25 +12,147 @@ body {
   height: 100vh;
 }
 
-.classic-clock {
+.clock-background {
   position: absolute;
-  border-radius: 100px;
-  border: 4px solid black;
-  width: 160px;
-  height: 160px;
+  background:rgb(41, 41, 41);
+  width: 304px;
+  height: 304px;
+  top: 0; bottom: 0; left: 0; right: 0;
+  border-radius: 88px;
+  margin: auto;
+}
+
+.clock-outline {
+  width: 256px;
+  height: 256px;
+  position: relative;
+  background: rgb(241, 241, 241);
+  border-radius: 1000px;
+  margin: auto;
+  top: 8%;
+}
+
+.inner-clock {
+  background: #f1f1f1;
+  width: 85%;
+  height: 85%;
   margin: auto;
   top: 0; bottom: 0; left: 0; right: 0;
+  position: absolute;
+  border-radius: 80%;
+  z-index: 1;
+}
+
+.classic-clock {
+  position: relative;
+  border-radius: 1000px;
+  border: 4px solid rgba(177, 184, 182, 0.575);
+  width: 232px;
+  height: 232px;
+  margin: auto;
+  top: 3.5%;
+}
+.center-point {
+  background: rgb(125,6,6);
+  background-image: linear-gradient(rgb(200 76 45), rgb(124 16 6));
+  width: 32px;
+  height: 32px;
+  top: 0; bottom: 0; left: 0; right: 0;
+  position: absolute;
+  border-radius: 100px;
+  margin: auto;
+  z-index: 99;
+}
+
+.bulleye {
+  background: #ffffff;
+  border: 1px solid rgb(155, 54, 29);
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+  margin: auto;
+  top: 0; bottom: 0; left: 0; right: 0;
+  position: absolute;
 
 }
 
 .hand {
-  width: 50%;
-  height: 6px;
-  background-color: black;
-  top: 50%;
+  background-color: #1f1e1e;
+  background-image: linear-gradient(-90deg, rgb(31, 30, 30), rgb(84 83 83));
   position: absolute;
   transform:rotate(90deg);
   transform-origin: 100%;
   transition: cubic-bezier(0.075, 0.82, 0.165, 0.5);
+  top: 50%;
+  z-index: 2;
+  border-radius: 4px;
 }
 
+.hour {
+  width: 40%;
+  left: 10%;
+  height: 8px;
+}
+
+.minute {
+  width: 45%;
+  left: 5%;
+  height: 8px;
+}
+
+.second {
+  width: 50%;
+  height: 4px;
+}
+
+.digital-clock {
+  position: absolute;
+  top: 42%;
+  left: 4%;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 2px;
+  display: flex;
+  padding: 4px;
+  box-shadow: inset 0px 2px 4px rgba(80, 79, 79, 0.4);
+}
+
+.mark-outline {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  z-index: 0;
+  margin: auto;
+}
+
+.marking {
+  width: 4px;
+  height: 95%;
+  margin: auto;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgb(150, 150, 150);
+  position: absolute;
+  border-radius: 8px;
+}
+
+.marking.mark-one {
+  transform:rotate(30deg);
+}
+
+.marking.mark-two {
+  transform:rotate(60deg);
+}
+
+.marking.mark-three {
+  transform:rotate(90deg);
+}
+
+.marking.mark-four {
+  transform:rotate(120deg);
+}
+.marking.mark-five {
+  transform:rotate(150deg);
+}
+
+.marking.mark-six {
+  transform:rotate(180deg);
+}
