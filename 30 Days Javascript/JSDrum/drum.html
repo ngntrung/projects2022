@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>30 Days JS - Drum Playing</title>
+        <link rel="stylesheet" href="drum.css">
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+    <body>
+        <div class="media-player">
+            <div class="controls">
+                <div class="control previous">
+                    <i data-feather="skip-back"></i>
+                </div>
+                <div class="control play">
+                    <i data-feather="play-circle"></i>
+                </div>
+                <div class="control pause">
+                    <i data-feather="pause-circle"></i>
+                </div>
+                <div class="control next">
+                    <i data-feather="skip-forward"></i>
+                </div>
+            </div>
+            <div class="progress-bar">
+
+            </div>
+            <div class="playlist">
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="drum"></div>
+            <div class="keys">
+                <div data-key="70" class="key">
+                    <kbd>F</kbd>
+                    <span>Tom</span>
+                </div>
+                <div data-key="71" class="key">
+                    <kbd>G</kbd>
+                    <span>Tom</span>
+                </div>
+                <div data-key="68" class="key">
+                    <kbd>D</kbd>
+                    <span>Snare</span>
+                </div>
+                <div data-key="72" class="key">
+                    <kbd>H</kbd>
+                    <span>Kick</span>
+                </div>
+                <div data-key="83" class="key">
+                    <kbd>S</kbd>
+                    <span>Crash</span>
+                </div>
+                <div data-key="75" class="key">
+                    <kbd>K</kbd>
+                    <span>Ride</span>
+                </div>
+                <div data-key="65" class="key">
+                    <kbd>A</kbd>
+                    <span>Hi hat</span>
+                </div>
+                <div data-key="76" class="key">
+                    <kbd>L</kbd>
+                    <span>Crash</span>
+                </div>
+                <div data-key="74" class="key">
+                    <kbd>J</kbd>
+                    <span>Tom</span>
+                </div>
+    
+            </div>
+        </div>
+        <audio data-key="68" src="sounds/snare.wav" controls type="audio/wav"></audio>
+        <audio data-key="83" src="sounds/crash2.mp3" controls type="audio/mp3">Your browser does not support the
+            <code>audio</code> element.
+        </audio>
+        <audio data-key="65" src="sounds/hihat.wav" controls type="audio/wav">Your browser does not support the
+            <code>audio</code> element.
+        </audio>
+        <audio data-key="70" src="sounds/tom1.wav" controls type="audio/wav">Your browser does not support the
+            <code>audio</code> element.
+        </audio>
+        <audio data-key="71" src="sounds/tom2.wav" controls type="audio/wav">Your browser does not support the
+            <code>audio</code> element.
+        </audio>
+        <audio data-key="72" src="sounds/kick.wav" controls type="audio/wav">Your browser does not support the
+            <code>audio</code> element.
+        </audio>
+        <audio data-key="74" src="sounds/tom.wav" controls type="audio/wav">Your browser does not support the
+            <code>audio</code> element.
+        </audio>
+        <audio data-key="75" src="sounds/ride.wav" controls type="audio/wav">Your browser does not support the
+            <code>audio</code> element.
+        </audio>
+        <audio data-key="76" src="sounds/crash.mp3" controls type="audio/mp3">Your browser does not support the
+            <code>audio</code> element.
+        </audio>
+        <div class="warning">
+            <p>Key is not supported. Please enter one in the key list on the screen</p>
+        </div>
+    <script src="drum.js"></script>
+    <script>
+        feather.replace()
+      </script>    
+    </body>
+</html>
