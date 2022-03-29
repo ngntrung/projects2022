@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Font Selection</title>
+    <link rel="stylesheet" href="font.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputs">
+        <div class="sentence">
+          <div class="sentence-input">
+            <label>Text</label>
+            <input type="text" class="base-sentence" placeholder="Type in something" value="Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy">
+          </div>
+          <div class="divider">
+          </div>
+          
+        </div>
+        <div class="color-input">
+          <div class="color">
+            <label>Text Color</label>
+            <input type="color" class="base-color" value="#ffffff" name="base-color">
+          </div>
+          <div class="background">
+            <label>Background</label>
+            <input type="color" class="base-background" value="#1b1b1b" name="base-background">
+          </div>
+          <div class="divider"></div>
+        </div>
+        <div class="font-size">
+          <div class="size-selection">
+              <div class="text-size-button">
+                <label>Text Size</label>
+                <div class="dropdown-button">
+                  <span class="size-value"> 16 px</span>
+                  <i data-feather="chevron-down"></i>
+                </div>
+                <div class="size-dropdown base-size">
+                  <div class="dropdown-item" data-value="8" data-sizing="px">8</div>
+                  <div class="dropdown-item" data-value="12" data-sizing="px">12</div>
+                  <div class="dropdown-item" data-value="14" data-sizing="px">14</div>
+                  <div class="dropdown-item" data-value="20" data-sizing="px">20</div>
+                  <div class="dropdown-item" data-value="24" data-sizing="px">24</div>
+                  <div class="dropdown-item" data-value="32" data-sizing="px">32</div>
+                  <div class="dropdown-item" data-value="40" data-sizing="px">40</div>
+                  <div class="dropdown-item" data-alue="64" data-sizing="px">64</div>
+                  <div class="dropdown-item" data-value="96" data-sizing="px">96</div>
+                  <div class="dropdown-item" data-value="120" data-sizing="px">120</div>
+                  <div class="dropdown-item" data-value="184" data-sizing="px">184</div>
+                  <div class="dropdown-item" data-value="280" data-sizing="px">280</div>
+                </div>   
+              </div>
+            <input type="range" name="base-size" class="size-range base-size" min="8" max="280" value="16" data-sizing="px">
+          </div>
+            
+          <div class="divider"></div>
+        </div>
+        <div class="reset">
+          <button class="reset-btn"><i data-feather="refresh-cw"></i></button>
+        </div>
+      </div>
+      <div class="display">
+        <div class="display-text">Here is the text</div>
+      </div>
+      <div class="accessibility">
+          <div class="accessibility-item"><span>Contrast Ratio</span> <div class="result-ratio"></div></div>
+          <div class="accessibility-item"><span>WCAG AA</span> <div class="result2a"></div></div>
+          <div class="accessibility-item"><span>WCAG AAA</span> <div class="result3a"></div></div>
+      </div>
+    </div>
+    <script src="font.js"></script>
+    <script>
+      feather.replace()
+    </script>
+  </body>
+</html>
